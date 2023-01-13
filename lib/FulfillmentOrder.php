@@ -33,6 +33,12 @@ class FulfillmentOrder extends ShopifyResource
      */
     protected $resourceKey = 'fulfillment_order';
 
+    /**
+     * @inheritDoc
+     */
+    protected $childResource = array (
+        'Fulfillment',
+    );
 
     /**
      * @inheritDoc
